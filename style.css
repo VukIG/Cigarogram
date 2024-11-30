@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+}
+
+.linContainer {
+    height: 1.2em;
+    width: 3em;
+    display: flex; /* Arrange items in a row */
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Add spacing between the image and text */
+    color: white; /* Text color */
+}
+
+.link {
+    width: 10em;
+    height: 1em;
+    padding: 0.8em;
+    border-radius: 15px;
+    margin: 1em;
+}
+
+.link:hover {
+    background-color: #333; /* Background color on hover */
+    transform: scale(1.02); /* Slightly enlarge the link on hover */
+    cursor: pointer;
+}
+
+img {
+    filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(180deg);
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+    object-fit: contain; /* Ensure the image fits well */
+}
+
+h1 {
+    font-size: 16px; /* Adjust font size to match the icon */
+    margin: 0; /* Remove default margin */
+    font-weight: normal; /* Ensure text is normal weight by default */
+}
+
+.link:hover h1 {
+    font-weight: bold; /* Make text bold when the link is hovered */
+}
+
+.empty-link h1{
+    display: none;
+    pointer-events: none;
+}
+
+
+.empty-link:hover {
+    transform: none; /* Disable the hover transform effect */
+    background-color: transparent; /* Keep background transparent */
+}
+
+.logo {
+    background-color: black;
+    padding: 0.8em;
+    width: 840px;
+    height: 300px;
+}
