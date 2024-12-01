@@ -6,6 +6,22 @@ body {
     justify-content: left;
 }
 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em; /* Reduce the gap between the buttons */
+    flex-grow: 1;
+    justify-content: start;
+}
+
 .linContainer {
     height: 1.2em;
     width: 3em;
@@ -20,7 +36,7 @@ body {
     height: 1em;
     padding: 0.8em;
     border-radius: 15px;
-    margin: 1em;
+    margin: 0; /* Remove excessive margin to control spacing */
 }
 
 .link:hover {
@@ -46,20 +62,46 @@ h1 {
     font-weight: bold; /* Make text bold when the link is hovered */
 }
 
-.empty-link h1{
-    display: none;
-    pointer-events: none;
-}
-
-
-.empty-link:hover {
-    transform: none; /* Disable the hover transform effect */
-    background-color: transparent; /* Keep background transparent */
-}
-
-.logo {
-    background-color: black;
+/* Individual link styles */
+.link-1,
+.link-2,
+.link-3,
+.link-4,
+.link-5,
+.link-6 {
+    width: 10em;
+    height: 1em;
     padding: 0.8em;
-    width: 840px;
-    height: 300px;
+    border-radius: 15px;
+    margin: 0; /* Align margin for consistent spacing */
+}
+
+/* Keep hover effects consistent */
+.link-1:hover,
+.link-2:hover,
+.link-3:hover,
+.link-4:hover,
+.link-6:hover {
+    background-color: #333;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/* No hover effects for empty spaces */
+.link-5:hover {
+    background-color: transparent;
+    transform: none;
+    cursor: default;
+}
+
+.link-0 img {
+    width: 8em;
+    height: auto;
+    object-fit: contain;
+    padding: 1.5em;
+}
+
+.link-5,
+.link-6 {
+    align-self: flex-start;
 }
