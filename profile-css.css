@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-right: 25em;
+    padding-left: 25em;
+    padding-top: 5em;
+    gap: 100px;
+}
+
+.pfp {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;     
+}
+
+.pfp img {
+    height: 170px;
+}
+
+.username {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.following {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 30px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.following h1 {
+    font-size: 1em; /* Adjust size if needed */
+    font-weight: normal; /* Remove bold */
+    margin: 0; /* Remove default margin if unnecessary */
+}
+
+.username h1, 
+.bio h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
