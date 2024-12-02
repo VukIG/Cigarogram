@@ -9,11 +9,10 @@ body {
 .profile {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
     padding-right: 25em;
     padding-left: 25em;
     padding-top: 5em;
-    gap: 100px;
+    gap: 80px;
 }
 
 .pfp {
@@ -55,4 +54,89 @@ body {
 .bio h1 {
     font-size: 1.5em;
     font-weight: normal;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+}
+
+.photos h1 {
+    font-weight: normal;
+}
+
+.stories {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 370px;
+    gap: 0;
+}
+
+.item1 {
+    width: 95px;
+    height: 95px;
+    margin-top: 1em;
+}
+
+.item2 h1 {
+    font-size: 1em;
+    font-weight: normal;
+    padding-left: 2em;
+    margin-top: 0;
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.photo img {
+    filter: brightness(0) invert(1); 
+    align-items: center;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 0.4em;
+}
+
+.line h1 {
+    font-weight: normal;
+    margin-top: 0;
+    margin: 0;
+}
+
+.photo h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between grid items */
+    margin-top: 20px; /* Space between "Photos" text and grid */
+    padding: 10px;
+}
+
+.grid-item {
+    width: 16em; /* Makes the square take up the full width of the grid cell */
+    height: 16em; /* Height of each square */
+    background-color: #ccc; /* Light gray color for blank squares */
+    border: 1px solid #fff; /* Border around each square */
 }
