@@ -1,80 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Cigarogram</title>
-    </head>
-    <body>
-        <div class="sidebar">
-            <div class="logo">
-                <div class="links">
-                    <div class="link-0">
-                        <img class="logo" src="svg/instagram-text-icon.svg" alt="">
-                    </div>
-                    <div class="link-1">
-                        <div class="linContainer">
-                            <img class="Home" src="png/Home.png" alt="">
-                            <h1>Home</h1>
-                        </div>
-                    </div>
-                    <div class="link-2">
-                        <div class="linContainer">
-                            <img class="Home" src="png/search.png" alt="">
-                            <h1>Search</h1>
-                        </div>
-                    </div>
-                    <div class="link-2">
-                        <div class="linContainer">
-                            <img class="Home" src="png/explore.png" alt="">
-                            <h1>Explore</h1>
-                        </div>
-                    </div>
-                    <div class="link-3">
-                        <div class="linContainer">
-                            <img class="Home" src="png/video.png" alt="">
-                            <h1>Reels</h1>
-                        </div>
-                    </div>
-                    <div class="link-3">
-                        <div class="linContainer">
-                            <img class="Home" src="png/chat (4).png" alt="">
-                            <h1>Messages</h1>
-                        </div>
-                    </div>
-                    <div class="link-4">
-                        <div class="linContainer">
-                            <img class="Home" src="png/heart.png" alt="">
-                            <h1>Notifications</h1>
-                        </div>
-                    </div>
-                    <div class="link-4">
-                        <div class="linContainer">
-                            <img class="Home" src="png/more.png" alt="">
-                            <h1>Create</h1>
-                        </div>
-                    </div>
-                    <div class="link-4">
-                        <div class="linContainer">
-                            <img class="Home" src="png/user_15194213.png" alt="">
-                            <h1>Profile</h1>
-                        </div>
-                    </div>
-                    <div class="link-5">
-                    </div>
-                    <div class="link-6">
-                        <div class="linContainer">
-                            <img class="Home" src="png/Threads_(app)_logo.svg.png" alt="">
-                            <h1>Threads</h1>
-                        </div>
-                    </div>
-                    <div class="link-6">
-                        <div class="linContainer">
-                            <img class="Home" src="png/menu.png" alt="">
-                            <h1>More</h1>
-                        </div>
-                    </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    
+                </div>
+                
+                <div class="infield">
+                    <input type="text" placeholder="Name" />
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="email" placeholder="Email" name="email"/>
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" />
+                    <label></label>
+                </div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Break</h1>
+                <div class="infield">
+                    <input type="email" placeholder="Email" name="email"/>
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" />
+                    <label></label>
+                </div>
+                <a href="#" class="forgot">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container" id="overlayCon">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with your friends, please login with your personal info</p>
+                    <button>Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start conversation with friends</p>
+                    <button>Sign Up</button>
                 </div>
             </div>
+            <button id="overlayBtn"></button>
         </div>
-    </body>
+    </div>
+
+    <footer>
+        
+    </footer>
+    
+    
+    <script>
+        const container = document.getElementById('container');
+        const overlayCon = document.getElementById('overlayCon');
+        const overlayBtn = document.getElementById('overlayBtn');
+
+        overlayBtn.addEventListener('click', ()=> {
+            container.classList.toggle('right-panel-active');
+
+            overlayBtn.classList.remove('btnScaled');
+            window.requestAnimationFrame( ()=> {
+                overlayBtn.classList.add('btnScaled');
+            })
+        });
+    </script>
+
+</body>
 </html>
