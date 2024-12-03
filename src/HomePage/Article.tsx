@@ -15,7 +15,7 @@ function Article({}: Props) {
     const [commentActive,setCommentActive] = useState<boolean>(false);
 
   return (
-    <div className="h-full w-1/2 card card-compact bg-gray-700 m-20 p-5 shadow-xl">
+    <div className="h-full w-1/2 card card-compact bg-gray-700 m-5 p-5 shadow-xl">
       <div className="flex justify-left items-center gap-5 mb-5">
         <CgProfile className="text-5xl mb-[-20px]" />
         <h1 className="text-white pb-4 pt-7 text-3xl">Sigma123</h1>
