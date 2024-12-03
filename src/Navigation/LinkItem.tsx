@@ -15,7 +15,7 @@ const LinkItem: React.FC<LinkItemProps> = ({ icon, label, isActive }) => {
         isActive ? 'bg-base-100' : ''
       } cursor-pointer`}
     >
-      <img src={icon} alt={label} className="w-6 h-6 object-contain invert" />
+      <img src={icon} alt={label} className="w-9 h-9 object-contain invert" />
       <h1 className="text-white text-sm font-medium">{label}</h1>
     </div>
   );

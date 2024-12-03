@@ -2,7 +2,7 @@ import React from 'react'
 
 type Props = {}
 
-function Login({}: Props) {
+function Phone({}: Props) {
   return (
     <div className="mockup-phone">
     <div className="camera"></div>
@@ -13,4 +13,4 @@ function Login({}: Props) {
   )
 }
 
-export default Login
+export default Phone
