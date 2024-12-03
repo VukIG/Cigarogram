@@ -1,0 +1,288 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+}
+
+.empty-div {
+    width: 4em;
+}
+
+.messages {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 1px;
+    padding-top: 2em;
+}
+
+.messages-text {
+    display: flex;
+    flex-direction: row;
+    gap: 14.5em;
+}
+
+.messages-text h1 {
+    font-size: 1em;
+    padding-left: 0.4em;
+}
+
+.messages-text h2 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #888888;
+    opacity: 0.8;
+}
+
+.messages-text h2:hover {
+    transform: scale(1.2); 
+}
+
+.username {
+    display: flex;
+    flex-direction: row;
+    gap: 12em;
+}
+
+.username h1 {
+    font-size: 1.5em;
+}
+
+.username img {
+    width: 1em;
+    filter: brightness(0) invert(1);
+}
+
+.username img:hover {
+    transform: scale(1.2); 
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.user img {
+    width: 4em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.text h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.text h2 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 0;
+    color: #888888;
+    opacity: 0.8;
+}
+
+.profiles {
+    position: relative;
+    height: 80vh;
+    overflow-y: auto;
+    padding-right: 1em; 
+}
+
+.profiles::-webkit-scrollbar {
+    width: 8px;
+}
+
+.profiles::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+}
+.profiles::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+.looks {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2em;
+    gap: 39em;
+}
+
+.calls {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding-left: 2em;
+}
+
+.profile img {
+    width: 3.5em;
+}
+
+.profile h1 {
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+.profile h2 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.calls img {
+    width: 2em;
+    height: 2em;
+    filter: brightness(0) invert(1);
+}
+
+.calls img:hover {
+    transform: scale(1.2); 
+}
+
+.new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.new img {
+    width: 5.7em;
+    margin-bottom: 0;
+    padding-top: 2em;
+}
+
+.new h1 {
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.new h2 {
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-top: 0;
+    color: #888888;
+    opacity: 0.8;
+}
+
+.input {
+    position: fixed;
+    padding-right: 1em;
+    bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
+    gap: 4.5em;
+    border: 2px solid rgba(136, 136, 136, 0.5);
+    border-radius: 20px;
+    height: 2.3em;
+    margin-left: 0.7em;
+}
+
+.smiley {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.smiley h1 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #888888;
+    opacity: 0.8;
+}
+
+.smiley img {
+    width: 1.5em;
+    height: 1.5em;
+    filter: brightness(0) invert(1);
+}
+
+.smiley img:hover {
+    transform: scale(1.2); 
+}
+
+.other {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.other img {
+    width: 1.5em;
+    height: 1.5em;
+    filter: brightness(0) invert(1);
+}
+
+.other img:hover {
+    transform: scale(1.2); 
+}
+
+.main {
+    position: relative;     
+    height: 80vh;      
+    overflow-y: auto;         
+    padding-right: 1em;      
+}
+
+.main::-webkit-scrollbar {
+    width: 8px;               
+}
+
+.main::-webkit-scrollbar-thumb {
+    background-color: #555;   
+    border-radius: 10px;      
+}
+
+.main::-webkit-scrollbar-track {
+    background-color: #333;   
+}
+
+.message-input {
+    font-size: 1em;
+    font-weight: normal;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    opacity: 0.8;
+    padding: 0.2em 0.5em;
+}
+
+.message-input::placeholder {
+    color: #888888;
+    opacity: 0.8; /* Matches the original text's opacity */
+}
+
+.message-input:focus {
+    opacity: 1; /* Brightens on focus */
+}
